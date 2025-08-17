@@ -6,6 +6,7 @@ hide: true
 
 PureWiki 是一个基于 Vue 3 和 Vite 构建的现代化静态 Wiki 系统.
 
+![](https://cdn.seimo.cn/Banner.png)
 
 ### 📖 内容管理
 - **Markdown 渲染**：支持完整的 Markdown 语法，包括 GFM 扩展
