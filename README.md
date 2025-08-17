@@ -77,6 +77,13 @@ PureWiki/
 npm install
 ```
 
+### 创建文档
+```
+cd docs
+rm -rf *
+git clone <docs repo> .
+```
+
 ### 开发模式
 ```bash
 npm run dev
@@ -169,4 +176,4 @@ hide: true  # 从导航菜单中隐藏
 
 ## 许可证
 
-MIT License
+GPL v3 License

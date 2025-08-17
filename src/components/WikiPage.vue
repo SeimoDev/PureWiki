@@ -952,7 +952,7 @@ const lastCommitDate = computed(() => {
   top: 80px; /* Adjust based on TopNavBar height + desired gap */
   max-height: calc(100vh - 100px); /* Adjust max-height, consider header/footer */
   overflow-y: auto;
-  border-left: 1px solid #e9ecef);
+  border-left: 1px solid #e9ecef;
   align-self: flex-start; /* Align to the top of the flex container */
   box-sizing: border-box;
 }
