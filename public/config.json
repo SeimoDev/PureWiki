@@ -5,7 +5,12 @@
   "navLinks": [
     { "text": "主页", "url": "/" },
     { "text": "Github", "url": "https://github.com/cooku-life" },
-    { "text": "内容投稿&加入社群", "url": "/contact" }
+    { "text": "关于", "url": "/about" }
   ],
-  "footerText": "© 2025 Cook Your Life. 本站所有内容遵循 GPL v3 许可证."
+  "footerText": "© 2025 Cook Your Life. 本站所有内容遵循 GPL v3 许可证.",
+  "theme": {
+    "primaryColor": "#ec4319",
+    "secondaryColor": "#d63918",
+    "accentColor": "#10b981"
+  }
 }

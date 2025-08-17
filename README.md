@@ -1,6 +1,6 @@
 # PureWiki
 
-PureWiki 是一个基于 Vue 3 和 Vite 构建的现代化静态 Wiki 系统，专门用于展示和管理 Markdown 文档。
+PureWiki 是一个基于 Vue 3 和 Vite 构建的现代化静态 Wiki 系统.
 
 ## 功能特性
 
@@ -8,8 +8,8 @@ PureWiki 是一个基于 Vue 3 和 Vite 构建的现代化静态 Wiki 系统，�
 - **Markdown 渲染**：支持完整的 Markdown 语法，包括 GFM 扩展
 - **自动目录生成**：基于标题自动生成页面导航目录 (TOC)
 - **代码高亮**：使用 highlight.js 提供多语言代码高亮
-- **前置元数据**：支持 YAML front matter 用于页面元数据配置
 - **Git 集成**：显示文件贡献者信息和最后修改时间
+- **高度自动化 CI 支持**: 支持 CI 自动化部署，文档随网站实时更新
 
 ### 🎨 用户界面
 - **响应式设计**：完美适配桌面端和移动端

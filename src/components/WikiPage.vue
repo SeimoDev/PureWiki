@@ -952,7 +952,7 @@ const lastCommitDate = computed(() => {
   top: 80px; /* Adjust based on TopNavBar height + desired gap */
   max-height: calc(100vh - 100px); /* Adjust max-height, consider header/footer */
   overflow-y: auto;
-  border-left: 1px solid #e9ecef;
+  border-left: 1px solid #e9ecef);
   align-self: flex-start; /* Align to the top of the flex container */
   box-sizing: border-box;
 }
@@ -961,7 +961,7 @@ const lastCommitDate = computed(() => {
   margin-top: 0;
   margin-bottom: 10px;
   font-size: 1.1em;
-  color: #495057;
+  color: #6c757d;
 }
 
 .toc-container ul {
@@ -976,7 +976,7 @@ const lastCommitDate = computed(() => {
 
 .toc-container a {
   text-decoration: none;
-  color: #ec4319;
+  color: var(--primary-color);
   font-size: 0.9em;
   transition: color 0.2s ease;
   position: relative; /* Ensure links are positioned */
@@ -984,7 +984,7 @@ const lastCommitDate = computed(() => {
 }
 
 .toc-container a:hover {
-  color: #ec4319;
+  color: var(--primary-color);
   text-decoration: underline;
 }
 
@@ -1005,7 +1005,7 @@ const lastCommitDate = computed(() => {
 .toc-highlighter {
   position: absolute;
   /* Remove fixed left/right */
-  background-color: #ec4319 !important; /* Force the background color */
+  background-color: var(--primary-color) !important; /* Force the background color */
   border-radius: 4px;
   z-index: 0; /* Behind the link text */
   opacity: 0; /* Initially hidden until positioned */
@@ -1022,7 +1022,7 @@ const lastCommitDate = computed(() => {
   right: 25px;
   width: 56px;
   height: 56px;
-  background-color: #ec4319; /* User updated color */
+  background-color: var(--primary-color); /* User updated color */
   color: white;
   border: none;
   border-radius: 50%;
@@ -1108,13 +1108,13 @@ const lastCommitDate = computed(() => {
   color: #e0e0e0;
 }
 #app.dark-mode .toc-container a {
-  color: #ec4319; /* Adjust link color */
+  color: var(--primary-color); /* Adjust link color */
 }
 #app.dark-mode .toc-container a:hover {
     color: #d1b3ff;
 }
 #app.dark-mode .toc-fab {
-  background-color: #ec4319; /* Use theme accent */
+  background-color: var(--primary-color); /* Use theme accent */
   color: #121212;
 }
 #app.dark-mode .toc-fab:hover {
@@ -1279,9 +1279,9 @@ const lastCommitDate = computed(() => {
   right: 0.5rem;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
-  color: #ec4319;
+  color: var(--primary-color);
   background-color: transparent;
-  border: 1px solid #ec4319;
+  border: 1px solid var(--primary-color);
   border-radius: 3px;
   cursor: pointer;
   opacity: 1;
@@ -1294,7 +1294,7 @@ const lastCommitDate = computed(() => {
 }
 
 .wiki-content :deep(.code-copy-button:hover) {
-  background-color: #ec4319;
+  background-color: var(--primary-color);
   color: white;
 }
 
@@ -1311,12 +1311,12 @@ const lastCommitDate = computed(() => {
 /* 暗色模式下的复制按钮样式 */
 #app.dark-mode .wiki-content :deep(.code-copy-button) {
   background-color: transparent;
-  color: #ec4319;
-  border-color: #ec4319;
+  color: var(--primary-color);
+  border-color: var(--primary-color);
 }
 
 #app.dark-mode .wiki-content :deep(.code-copy-button:hover) {
-  background-color: #ec4319;
+  background-color: var(--primary-color);
   color: #ffffff;
 }
 
@@ -1463,9 +1463,9 @@ const lastCommitDate = computed(() => {
   left: 0.5rem;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
-  color: #ec4319;
+  color: var(--primary-color);
   background-color: transparent;
-  border: 1px solid #ec4319;
+  border: 1px solid var(--primary-color);
   border-radius: 3px;
   font-family: 'Courier New', Courier, monospace;
   z-index: 2 !important; /* 提高 z-index 并添加 !important */
@@ -1722,9 +1722,9 @@ const lastCommitDate = computed(() => {
   left: 0.5rem;
   padding: 0.25rem 0.5rem;
   font-size: 0.75rem;
-  color: #ec4319;
+  color: var(--primary-color);
   background-color: transparent;
-  border: 1px solid #ec4319;
+  border: 1px solid var(--primary-color);
   border-radius: 3px;
   font-family: 'Courier New', Courier, monospace;
   z-index: 2 !important; /* 提高 z-index 并添加 !important */

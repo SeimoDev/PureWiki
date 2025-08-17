@@ -74,13 +74,13 @@ li {
 
 .nav-link {
   text-decoration: none;
-  color: #34495e;
+  color: #6c757d;
   transition: color 0.3s ease;
 }
 
 .nav-link:hover,
 .router-link-active {
-  color: #ec4319; /* Vue green */
+  color: var(--primary-color);
   font-weight: 600;
 }
 

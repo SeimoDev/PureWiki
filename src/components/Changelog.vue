@@ -15,7 +15,6 @@
 </template>
 
 <script setup>
-import { defineProps } from 'vue';
 
 const props = defineProps({
   logs: {
@@ -70,7 +69,7 @@ const props = defineProps({
 
 /* 可选：链接样式 */
 .log-group a {
-  color: #ec4319;
+  color: var(--primary-color);
   text-decoration: none;
   font-size: 0.9em;
   margin-left: 5px;

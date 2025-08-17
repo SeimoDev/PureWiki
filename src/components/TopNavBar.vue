@@ -125,7 +125,6 @@
 
 <script setup>
 import { ref, watch, computed, nextTick, onMounted, onUnmounted } from 'vue'; // Added onMounted, onUnmounted
-import { defineProps, defineEmits } from 'vue';
 import { pages } from '@/generated/content.js';
 import { useRouter } from 'vue-router';
 
@@ -432,7 +431,7 @@ onUnmounted(() => {
   transition: color 0.2s ease;
 }
 .mobile-menu-toggle:hover, .search-toggle-button:hover, .mobile-nav-links-toggle:hover {
-  color: #343a40;
+  color: #333;
 }
 .mobile-menu-toggle svg, .search-toggle-button svg, .mobile-nav-links-toggle svg {
    width: 22px; /* Slightly larger */
@@ -442,7 +441,7 @@ onUnmounted(() => {
 #app.dark-mode .mobile-menu-toggle,
 #app.dark-mode .search-toggle-button,
 #app.dark-mode .mobile-nav-links-toggle {
-  color: #adb5bd;
+  color: #6c757d;
 }
 #app.dark-mode .mobile-menu-toggle:hover,
 #app.dark-mode .search-toggle-button:hover,
@@ -484,8 +483,8 @@ onUnmounted(() => {
   padding: 2px 6px;
   font-size: 0.7em;
   font-weight: bold;
-  color: #ec4319;
-  border: 1px solid #ec4319;
+  color: var(--primary-color);
+  border: 1px solid var(--primary-color);
   border-radius: 4px;
   line-height: 1;
   vertical-align: middle; /* Align with title */
@@ -500,7 +499,7 @@ onUnmounted(() => {
 
 .nav-link {
   text-decoration: none;
-  color: #ec4319;
+  color: var(--primary-color);
   font-size: 1em;
   padding: 5px 0;
   border-bottom: 2px solid transparent;
@@ -530,8 +529,8 @@ onUnmounted(() => {
 
 .nav-link:hover,
 .nav-link.router-link-exact-active {
-  color: #ec4319;
-  border-bottom: 2px solid #ec4319;
+  color: var(--primary-color);
+  border-bottom: 2px solid var(--primary-color);
 }
 
 /* --- Search Styles --- */
@@ -676,7 +675,7 @@ onUnmounted(() => {
   line-height: 1;
 }
 .mobile-search-close-button:hover {
-  color: #343a40;
+  color: #333;
 }
 
 .mobile-search-results {
@@ -735,12 +734,12 @@ onUnmounted(() => {
   color: #999;
 }
 #app.dark-mode .mobile-search-input:focus {
-  border-color: #777;
+  border-color: #777or);
   box-shadow: 0 0 0 0.2rem rgba(119, 119, 119, 0.25);
   background-color: rgba(68, 68, 68, 0.8); /* Slightly less transparent on focus */
 }
 #app.dark-mode .mobile-search-close-button {
-  color: #adb5bd;
+  color: #6c757d;
 }
 #app.dark-mode .mobile-search-close-button:hover {
   color: #f8f9fa;
@@ -771,11 +770,11 @@ onUnmounted(() => {
   transition: color 0.3s ease, transform 0.3s ease;
 }
 .dark-mode-toggle:hover svg {
-  color: #343a40;
+  color: #333;
   transform: scale(1.1);
 }
 #app.dark-mode .dark-mode-toggle svg {
-  color: #adb5bd;
+  color: #6c757d;
 }
 #app.dark-mode .dark-mode-toggle:hover svg {
   color: #f8f9fa;
@@ -800,7 +799,7 @@ onUnmounted(() => {
   color: #e0e0e0;
 }
 #app.dark-mode .nav-link {
-  color: #adb5bd;
+  color: #6c757d;
 }
 #app.dark-mode .nav-link:hover,
 #app.dark-mode .nav-link.router-link-exact-active {
@@ -816,7 +815,7 @@ onUnmounted(() => {
 }
 #app.dark-mode .search-input::placeholder { color: #999; }
 #app.dark-mode .search-input:focus {
-  border-color: #777;
+  border-color: #777or);
   box-shadow: 0 0 0 0.2rem rgba(119, 119, 119, 0.25);
   background-color: rgba(68, 68, 68, 0.8); /* Slightly less transparent on focus */
 }
@@ -909,12 +908,12 @@ onUnmounted(() => {
 }
 .mobile-nav-dropdown .nav-link:hover {
     background-color: #f0f0f0;
-    color: #ec4319;
+    color: var(--primary-color);
     border-bottom: none;
 }
 .mobile-nav-dropdown .nav-link.router-link-exact-active {
     font-weight: bold;
-    color: #ec4319;
+    color: var(--primary-color);
     border-bottom: none;
 }
 

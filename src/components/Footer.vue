@@ -30,9 +30,9 @@ onMounted(async () => {
 .app-footer {
   padding: 15px 20px;
   text-align: center;
-  background-color: #f1f1f1; /* Light grey background */
-  color: #555; /* Dark grey text */
-  border-top: 1px solid #ddd; /* Subtle top border */
+  background-color: #f1f1f1;
+  color: #555;
+  border-top: 1px solid #dddolor);
   margin-top: auto; /* Push footer to the bottom */
   font-size: 0.9em;
 }
